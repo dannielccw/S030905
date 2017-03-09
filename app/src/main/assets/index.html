@@ -9,56 +9,41 @@ and open the template in the editor.
     <title>TODO supply a title</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-            .container {
-                text-align: center;
-            }
-        </style>
 </head>
-<body bgcolor="#d1fce8">
-<div class="container">
-    <img src="profile1.jpg" />
-</div>
-
+<body bgcolor="#E6E6FA">
 <form action="" method="get">
-    <fieldset>
-        <legend>個人資訊</legend>
-        姓&nbsp;名:<input type="text" name="username" id="username" size="20"><br>
-        姓&nbsp;別:<input type="radio" name="userage" value="age1">男
-        <input type="radio" name="userage" value="age2" checked="">女
-        <br>
-        最高學歷:
-        <select name="usernumber" size="4">
-            <option value="高中以下">高中以下
-            <option value="大專院校">大專院校
-            <option value="碩士">碩士
-            <option value="博士">博士
-            <option value="其它">其它
-        </select>
-    </fieldset>
+    姓&nbsp;名<input type="text" name="username" id="username" size="40"><br>
+    公&nbsp;司<input type="text" name="userjob" id="userjob" size="40"><br>
+    E-mail:<input type="text" name="usermail" size="40" value="tt@yahoo.com.tw"><br>
+    年齡:
+    <input type="radio" name="userage" value="age1">未滿20歲
+    <input type="radio" name="userage" value="age2" checked="">20~29
+    <input type="radio" name="userage" value="age3">30~39
+    <input type="radio" name="userage" value="age4">40~49
+    <input type="radio" name="userage" value="age5">50歲以上<br>
+
+    使用過的手機廠牌:
+    <input type="checkbox" name="userphone[]" value="htc" checked="">htc
+    <input type="checkbox" name="userphone[]" value="applw">apple
+    <input type="checkbox" name="userphone[]" value="samsung">samsung
+    <input type="checkbox" name="userphone[]" value="others">others
     <br>
-    <fieldset>
-        <legend>其它資訊</legend>
-
-        您喜歡下列哪些活動（可複選）？
-        <input type="checkbox" name="userphone[]" value="閱讀" checked="">閱讀
-        <input type="checkbox" name="userphone[]" value="打球">打球
-        <input type="checkbox" name="userphone[]" value="逛街">逛街
-        <input type="checkbox" name="userphone[]" value="聽音樂">聽音樂
-        <input type="checkbox" name="userphone[]" value="水上運動">水上運動
-        <input type="checkbox" name="userphone[]" value="旅行">旅行
-        <br>
-
-        您對於使用臉書經營社群有何看法？<br>
-        <textarea name="usertrouble" cols="45" rows="4"></textarea>
-        <br>
-
-    </fieldset>
+    您使用手機最常碰到的問題?<br>
+    <textarea name="usertrouble" cols="45" rows="4">ex:連線速度不夠快...</textarea>
     <br>
-    <input type="submit" value="傳送資料">
-    <input type="reset" value="清除資料">
-
+    您用過那些家業者的門號?<br>
+    <select name="usernumber">
+        <option value="中華電信">中華電信
+        <option value="台大">台大
+        <option value="遠傳">遠傳
+        <option value="亞太">亞太
+        <option value="others">others
+    </select>
+    <br>
+    <input type="submit" value="提交">
+    <input type="reset" value="重新輸入">
 </form>
 
+<p><a href="https://www.google.com">dan.w test: Visit google.com!</a></p>
 </body>
 </html>
