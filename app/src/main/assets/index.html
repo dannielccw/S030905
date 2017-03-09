@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+            .container {
+                text-align: center;
+            }
+        </style>
+</head>
+<body bgcolor="#d1fce8">
+<div class="container">
+    <img src="profile1.jpg" />
+</div>
+
+<form action="" method="get">
+    <fieldset>
+        <legend>個人資訊</legend>
+        姓&nbsp;名:<input type="text" name="username" id="username" size="20"><br>
+        姓&nbsp;別:<input type="radio" name="userage" value="age1">男
+        <input type="radio" name="userage" value="age2" checked="">女
+        <br>
+        最高學歷:
+        <select name="usernumber" size="4">
+            <option value="高中以下">高中以下
+            <option value="大專院校">大專院校
+            <option value="碩士">碩士
+            <option value="博士">博士
+            <option value="其它">其它
+        </select>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>其它資訊</legend>
+
+        您喜歡下列哪些活動（可複選）？
+        <input type="checkbox" name="userphone[]" value="閱讀" checked="">閱讀
+        <input type="checkbox" name="userphone[]" value="打球">打球
+        <input type="checkbox" name="userphone[]" value="逛街">逛街
+        <input type="checkbox" name="userphone[]" value="聽音樂">聽音樂
+        <input type="checkbox" name="userphone[]" value="水上運動">水上運動
+        <input type="checkbox" name="userphone[]" value="旅行">旅行
+        <br>
+
+        您對於使用臉書經營社群有何看法？<br>
+        <textarea name="usertrouble" cols="45" rows="4"></textarea>
+        <br>
+
+    </fieldset>
+    <br>
+    <input type="submit" value="傳送資料">
+    <input type="reset" value="清除資料">
+
+</form>
+
+</body>
+</html>
